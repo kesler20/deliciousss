@@ -21,7 +21,7 @@ const Recipe = () => {
       setDetails(JSON.parse(itemsInLocalStorage));
     } else {
       const data = await fetch(
-        `https://api.spoonacular.com/recipes/${params.name}/information/?apiKey=69a18310da47441088dcb09a5a04c4d3`
+        `https://api.spoonacular.com/recipes/${params.name}/information/?apiKey=f0836a79e66842a99544b60991bce5cd`
       );
       const detailData = await data.json();
       setDetails(detailData);
@@ -39,7 +39,7 @@ const Recipe = () => {
         </div>
       );
     } else if (activeTab === "ingredients") {
-        console.log(details.extendedIngredients)
+      console.log(details.extendedIngredients);
       return (
         <ul>
           {details.extendedIngredients.map((ingredient) => {

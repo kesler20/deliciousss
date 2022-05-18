@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav to={"/"}>
+        <Nav>
           <GiKnifeFork />
-          <Logo >Deliciouss</Logo>
+          <Logo to={"/"}>Deliciouss</Logo>
         </Nav>
         <Search />
         <Category />

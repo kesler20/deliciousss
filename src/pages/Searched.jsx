@@ -16,7 +16,7 @@ const Searched = () => {
       setSearchedRecipes(JSON.parse(itemsInLocalStorage));
     } else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/complexSearch?apiKey=69a18310da47441088dcb09a5a04c4d3&query=${name}`
+        `https://api.spoonacular.com/recipes/complexSearch?apiKey=f0836a79e66842a99544b60991bce5cd&query=${name}`
       );
       const recipes = await api.json();
 
